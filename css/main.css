@@ -121,9 +121,7 @@ header .sub-menu {
   position: absolute;
   top: 10px;
   right: 0;
-
   display: flex;
-
 }
 header .sub-menu ul.menu {
   font-family: Arial, sans-serif;
@@ -160,7 +158,7 @@ header .sub-menu .search {
 }
 header .sub-menu .search input {
   width: 36px;
-  height: 34px;
+  height: inherit;
   padding: 4px 10px;
   border: 1px solid #ccc;
   box-sizing: border-box;
@@ -769,32 +767,32 @@ header .badges .badge {
 .awards .swiper-next {
   width: 42px;
   height: 42px;
+  outline: none;
   border: 2px solid #fff;
   border-radius: 50%;
-  outline: none;
   color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
   opacity: .3;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
+  transition: .4s;
 }
 .awards .swiper-prev {
   left: -100px;
 }
 .awards .swiper-next {
-  right: -9%;
+  right: -100px;
 }
 .awards .swiper-prev:hover,
 .awards .swiper-next:hover {
   background-color: #fff;
   color: #333;
 }
-
 
 /* FOOTER */
 footer {
